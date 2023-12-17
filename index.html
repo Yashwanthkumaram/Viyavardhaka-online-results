@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-77717540-1"></script>
+
+<script>
+
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag(){dataLayer.push(arguments);}
+
+  gtag('js', new Date());
+
+ 
+
+  gtag('config', 'UA-77717540-1');
+
+</script>	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>Online Results</title>
+		
+		
+		<!-- Le styles -->
+		<link href="http://118.151.210.78/online_results_vvce_uat/assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" /><link href="http://118.151.210.78/online_results_vvce_uat/assets/css/bootstrap/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" /><link href="http://118.151.210.78/online_results_vvce_uat/assets/css/jqueryui/jquery-ui-1.10.2.custom.css" rel="stylesheet" type="text/css" /><link href="http://118.151.210.78/online_results_vvce_uat/assets/css/custom/generic.css" rel="stylesheet" type="text/css" /><link href="http://118.151.210.78/online_results_vvce_uat/assets/css/custom/datepicker.css" rel="stylesheet" type="text/css" /><link href="http://118.151.210.78/online_results_vvce_uat/assets/css/custom/student_result.css" rel="stylesheet" type="text/css" />		
+	
+		<!-- Le scripts -->
+		<script  src="http://118.151.210.78/online_results_vvce_uat/assets/js/library/jquery-1.9.1.min.js" language="javascript" type="text/javascript">
+</script><script  src="http://118.151.210.78/online_results_vvce_uat/assets/js/library/bootstrap.min.js" language="javascript" type="text/javascript">
+</script><script  src="http://118.151.210.78/online_results_vvce_uat/assets/js/library/jquery.validate.min.js" language="javascript" type="text/javascript">
+</script><script  src="http://118.151.210.78/online_results_vvce_uat/assets/js/library/jquery-ui-1.10.2.custom.min.js" language="javascript" type="text/javascript">
+</script><script  src="http://118.151.210.78/online_results_vvce_uat/assets/js/custom/generic.js" language="javascript" type="text/javascript">
+</script>	</head>
+	<input type="hidden" id="get_baseurl" value="http://118.151.210.78/online_results_vvce_uat/" />
+	<input type="hidden" id="hid_val" value="1" />
+
+<body id="result_body" class="result_vw" onload="noBack();"
+onpageshow="if (event.persisted) noBack();"
+> 
+<div  class="navbar-default container-fluid  container-header">
+	<div class="row">
+		 <div class="col-md-12 col-xs-12">
+			<div class="col-md-6 col-xs-8 col-md-offset-3 col-xs-offset-2">
+				<img src="http://118.151.210.78/online_results_vvce_uat/assets/college_logo.jpg" class="img-responsive"/>
+			</div>
+		</div>
+	</div>
+</div>
+    	
+		<!--Allow PDF download for the students -->
+<input type="hidden" name="allow_pdf" id="allow_pdf" value="0" > 
+		<!--Set college logo and org name in the header part -->
+<div class="container-fluid">
+<div class="col-md-12 col-xs-12">
+
+	<div id="result_label" class="row" style="">
+		
+		<div class="col-md-offset-4 col-md-4 col-xs-12" style="min-height: 550px;" >
+		
+				<div class="login_screen">
+			<div id="login-outer" class="" >				
+				<form id="login-form">
+					
+					<div class="row">
+						<div class="col-xs-12 col-md-12 " style=" margin-top: 20%;">		<!--<span class="usn_heading">Online Result</span>-->
+							<div class="panel panel-info usn_body">
+								<div class="panel-body" style="">
+								<div class="row">
+									<div class="form-group">
+										<div class="row"> 
+										<br/>
+											<div class="col-xs-10 col-sm-9 col-md-9 col-md-offset-2 col-sm-offset-2 ">
+												<input type="text" name="usn" value="" id="usn" class="form-control" placeholder="USN"  /> 		
+												<span id='usn_exist' class="danger"></span>
+											</div>
+											<div class="col-xs-10 col-sm-9 col-md-9 col-md-offset-2  col-sm-offset-2 " style="margin-top:2px;">
+												<input type="text" name="dob" value="" id="dob" class="form-control datepicker" placeholder="DATE OF BIRTH"  /> 		
+												<span id='dob_exist' class="danger"></span>
+											</div>
+											<div class="col-xs-10 col-sm-9 col-md-9 col-md-offset-2 col-sm-offset-2  " style="margin-top:2px;">
+												<!--   -->
+<!-- <option value="" selected="selected">semester</option> -->
+</select> 		
+												<span id='semester_exist' class="danger"></span>
+											</div>
+										</div>										
+										<br/>										
+										<div class="row">
+											<div class=" col-xs-4 col-sm-4 col-md-4 col-md-offset-2  col-sm-offset-2 ">
+												<button type = "button" id="result"  class="btn btn-primary" onclick="">SUBMIT</button>
+												<!-- <button id="myButton">Click me to render another webpage</button> -->
+
+												
+
+
+
+
+    <script>
+        var myButton = document.getElementById('result');
+        var usnInput = document.getElementById('usn');
+		console.log(usnInput)
+
+        function navigateToWebpage() {
+            var validUSNPattern = /^4vv21ec064$/; // Define the valid pattern
+
+            // Check if the entered USN matches the pattern
+            if (validUSNPattern.test(usnInput.value)) {
+                var newWebpageURL = 'results.html';
+                window.location.href = newWebpageURL;
+            } 
+        }
+
+        myButton.addEventListener('click', navigateToWebpage);
+
+       
+    </script>
+											</div>	
+										</div>
+									</div>														
+								</div>
+								</div>
+							</div> 				
+						<input type='hidden' value=http://118.151.210.78/online_results_vvce_uat/ id='base_url'>  
+					</div>					
+				</form>
+			</div>
+		</div>
+	</div>
+		
+		</div>
+		
+		
+		
+	</div>
+	
+	<!-- HTML tags for Student USN screen -->
+	
+</body>			
+<div class="footer">
+<p>Powered by IonEMS (<a id="link_id" href="#" target="_blank" style="color:white;">www.ionidea.com</a>)</p>
+</div>
+<script type="text/javascript">
+$("#link_id").on('mouseover',function(){
+//location.reload('href','http://www.ionidea.com');
+$("#link_id").attr('href','http://www.ionidea.com');
+});
+$("#link_id").on('mouseout',function(){
+//location.reload('href','http://www.ionidea.com');
+$("#link_id").attr('href','#');
+});
+</script>
+</body>
+</html><script  src="http://118.151.210.78/online_results_vvce_uat/assets/js/custom/bootstrap-datepicker.js" language="javascript" type="text/javascript">
+</script><script  src="http://118.151.210.78/online_results_vvce_uat/assets/js/custom/student_result.js" language="javascript" type="text/javascript">
+</script>
